@@ -18,20 +18,20 @@ export const UserCard = ({ user, signOut }) => {
         <p>{user.email}</p>
         <h2>{user.username}</h2>
         <div className={styles.categories}>
-          {user.categories.length <= 6 &&
+          {user?.categories?.length <= 6 &&
             user.categories.map((category) => (
               <span key={category} className={styles.category}>
                 {category}
               </span>
             ))}
 
-          {user.categories.length > 6 &&
+          {user?.categories?.length > 6 &&
             user.categories.slice(0, 5).map((category) => (
               <span key={category} className={styles.category}>
                 {category}
               </span>
             ))}
-          {user.categories.length > 6 && (
+          {user?.categories?.length > 6 && (
             <span className={styles.category}>
               +{user.categories.length - 5} more
             </span>
