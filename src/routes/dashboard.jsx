@@ -10,7 +10,9 @@ import { WeatherCard, WeatherSkeleton } from "../components/weatherCard";
 import styles from "./dashboard.module.css";
 
 // API Keys
-import { NEWSAPI_KEY, OPENWEATHERMAP_KEY } from "../secrets";
+const OPENWEATHERMAP_KEY = import.meta.env.VITE_OPENWEATHERMAP_KEY;
+const NEWSAPI_KEY = import.meta.env.VITE_NEWSAPI_KEY;
+
 
 const DashboardPage = () => {
   // user variables

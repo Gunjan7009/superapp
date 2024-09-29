@@ -5,7 +5,7 @@ import { userPlaceholder } from "../data/data";
 import "../index.css";
 import styles from "./entertainment.module.css";
 
-import { MOVIEDB_KEY } from "../secrets";
+const MOVIEDB_KEY = import.meta.env.VITE_MOVIEDB_KEY;
 
 /// Category Skeleton shown while loading
 const CategorySkeleton = () => (
