@@ -1,4 +1,4 @@
-# React + Vite Sample Site
+# Super App
 
 Running steps
 
