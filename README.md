@@ -1,7 +1,20 @@
 # Super App
 
-Running steps
+create a `.env` file with following keys (openweathermap, NYT news, TMDB):
+```env
+VITE_OPENWEATHERMAP_KEY = 123
+VITE_MOVIEDB_KEY = 123
+VITE_NYTAPIKEY = 123
+```
 
+
+Running steps (using npm)
+```
+npm install
+npm run dev
+```
+
+Running steps (using bun)
 ```
 bun install
 bun run dev
