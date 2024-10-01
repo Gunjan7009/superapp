@@ -51,6 +51,16 @@ export const TimerCard = ({
     setIsRunning(!isRunning);
   };
 
+const restartTimer = () => {
+  setElapsedTime(0);
+  setIsRunning(false); 
+};
+
+
+const stopTimer = () => {
+  setIsRunning(false);
+};
+
   // get formatted time string for chronograph
   const formatTime = (totalSeconds) => {
     const hours = Math.floor(totalSeconds / 3600);
@@ -154,10 +164,19 @@ export const TimerCard = ({
             </button>
           </div>
         </div>
-        <button className={styles.startButton} onClick={toggleTimer}>
-          {isRunning ? "Pause" : "Start"}
-        </button>
-      </div>
-    </div>
-  );
+<div className={styles.actionButtons}>
+          <button className={styles.startButton} onClick={toggleTimer}>
+            Start
+          </button>
+          <button className={styles.startButton} onClick={stopTimer}>
+            Stop
+          </button>
+          <button className={styles.startButton} onClick={restartTimer}>
+            Restart
+          </button>
+        </div>
+ </div>
+</div>
+);
 };
+

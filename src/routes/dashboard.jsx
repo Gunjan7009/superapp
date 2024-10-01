@@ -161,7 +161,7 @@ const DashboardPage = () => {
           <NewsCard news={news} />
         ) : (
           <p>Error fetching news data</p>
-        )}
+        )} 
 
         <TimerCard
           timerTime={timerTime}
